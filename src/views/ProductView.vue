@@ -82,11 +82,6 @@ watchEffect(() => {
 </script>
 
 <template>
-  <v-row no-gutters class="pa-5">
-    <v-alert border="top" border-color="success" elevation="2">
-      Please use following Product code for successful result: B07HGTZSZY, B08JG8J5JP, B09XYZ1234
-    </v-alert>
-  </v-row>
   <v-row v-if="error" no-gutters class="pa-5">
     <v-col>
       <v-alert border="top" type="warning" variant="outlined" prominent>
