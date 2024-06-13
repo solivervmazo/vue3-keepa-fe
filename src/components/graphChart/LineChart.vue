@@ -18,7 +18,6 @@ interface ChartProps {
   labels: string[]
   datasets: {
     label: string
-    borderColor: string
     backgroundColor?: string
     data: number[]
   }[]

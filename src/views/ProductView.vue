@@ -94,7 +94,7 @@ watchEffect(() => {
       </v-alert>
     </v-col>
   </v-row>
-  <v-container v-else>
+  <v-container v-if="product">
     <v-row no-gutters>
       <v-col>
         <v-container class="d-flex flex-column">
@@ -114,11 +114,7 @@ watchEffect(() => {
       </v-col>
       <v-col sm="12" md="6">
         <!-- Sales Rank -->
-        <line-chart
-          v-if="product"
-          :labels="product.salesRankChartData.labels"
-          :datasets="salesRank"
-        />
+        <line-chart :labels="product?.salesRankChartData?.labels ?? []" :datasets="salesRank" />
       </v-col>
     </v-row>
     <v-row no-gutters>

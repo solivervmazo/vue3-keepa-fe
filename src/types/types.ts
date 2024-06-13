@@ -17,8 +17,8 @@ export interface Product {
     last180Days: number
   }
   salesRankChartData: {
-    labels: String[]
+    labels: string[]
     data: number[]
   }
-  productImage: String
+  productImage: string
 }

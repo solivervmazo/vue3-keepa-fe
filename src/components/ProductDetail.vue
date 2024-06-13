@@ -2,7 +2,7 @@
 import { type Product } from '@/types/types'
 
 const props = defineProps<{
-  product?: Product
+  product: Product
 }>()
 </script>
 

@@ -5,8 +5,8 @@ import BarChart from '@/components/graphChart/BarChart.vue'
 const tab = ref(null)
 
 const props = defineProps<{
-  buyBoxPricesData?: []
-  inStockRateData?: []
+  buyBoxPricesData: { label: string; backgroundColor: string; data: number[] }[]
+  inStockRateData: { label: string; backgroundColor: string; data: number[] }[]
 }>()
 </script>
 
