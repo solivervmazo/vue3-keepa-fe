@@ -1,39 +1,51 @@
-# keepa
+# Project Name
 
-This template should help get you started developing with Vue 3 in Vite.
+This project is a [brief description of your project].
 
-## Recommended IDE Setup
+## Technologies Used
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- Vue3
+- vue-router
+- Axios
+- CORS
+- chart.js
+- vue-chartjs
+- vuetify
 
-## Type Support for `.vue` Imports in TS
+## Installation
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+**Clone the repository:**
 
-## Customize configuration
+```bash
+git clone <repository-url>
+cd <project-folder>
+```
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+**Clone the repository:**
 
-## Project Setup
-
-```sh
+```bash
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+**Build the project:**
 
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
+```bash
 npm run build
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+**Start the server:**
 
-```sh
-npm run lint
+```bash
+npm run dev
+```
+
+## API Endpoint
+
+**GET /api/product/:id**
+Retrieves product information based on the provided id.
+
+Example request:
+
+```bash
+curl http://localhost:3000/api/product/B07HGTZSZY
 ```
