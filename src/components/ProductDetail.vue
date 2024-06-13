@@ -12,7 +12,8 @@ const props = defineProps<{
       <v-img
         :aspect-ratio="1"
         class="bg-white"
-        src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
+        lazy-src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
+        :src="product.productImage"
         width="200"
         cover
       ></v-img>
