@@ -7,6 +7,7 @@ const tab = ref(null)
 const props = defineProps<{
   buyBoxPricesData: { label: string; backgroundColor: string; data: number[] }[]
   inStockRateData: { label: string; backgroundColor: string; data: number[] }[]
+  aiSummary?: string
 }>()
 </script>
 
@@ -15,6 +16,7 @@ const props = defineProps<{
     <v-tabs v-model="tab" bg-color="primary">
       <v-tab :value="1" class="text-subtitle-2">Average Buy Box Prices</v-tab>
       <v-tab :value="2" class="text-subtitle-2">In Stock Rate</v-tab>
+      <v-tab :value="3" class="text-subtitle-2">Summary</v-tab>
     </v-tabs>
 
     <v-card-text>
@@ -32,6 +34,9 @@ const props = defineProps<{
             :labels="['30 Days', '90 Days', '180 Days']"
             :datasets="props.inStockRateData"
           />
+        </v-tabs-window-item>
+        <v-tabs-window-item :value="3">
+          <p><strong>Summary:</strong> {{ props.aiSummary || 'No summary available.' }}</p>
         </v-tabs-window-item>
       </v-tabs-window>
     </v-card-text>

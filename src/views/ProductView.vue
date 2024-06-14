@@ -119,6 +119,7 @@ watchEffect(() => {
           <product-chart
             :buy-box-prices-data="buyBoxPricesData"
             :in-stock-rate-data="inStockRateData"
+            :ai-summary="product.aiSummary"
           ></product-chart>
         </v-container>
       </v-col> </v-row

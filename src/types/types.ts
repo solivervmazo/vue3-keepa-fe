@@ -21,4 +21,5 @@ export interface Product {
     data: number[]
   }
   productImage: string
+  aiSummary: string
 }
