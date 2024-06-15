@@ -7,8 +7,7 @@ const productId = ref('')
 const searchProduct = () => {
   if (productId.value) {
     router.push({
-      path: `/product/${productId.value}`,
-      query: { key: Date.now().toString() } // Ensure a unique key each time
+      path: `/product/${productId.value}`
     })
   }
 }
