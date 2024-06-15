@@ -75,6 +75,7 @@ onMounted(() => {
 watchEffect(() => {
   const productId = route.params.id as string
   if (productId) {
+    product.value = null
     error.value = ''
     fetchProduct(productId)
   }
